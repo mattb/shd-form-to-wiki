@@ -27,7 +27,7 @@ end
 
 
 # CHANGE THIS LINE TO YOUR GMAIL LOGIN DETAILS:
-session = GoogleSpreadsheet.login(GOOGLE_USER, GOOGLEPASSWORD)
+session = GoogleSpreadsheet.login(GOOGLE_USER, GOOGLE_PASSWORD)
 rows = session.spreadsheet_by_url("https://spreadsheets.google.com/feeds/worksheets/#{GOOGLE_DOC_ID}/private/full").worksheets[0].rows
 fields = rows[0]
 data = rows.slice(1,rows.size).map { |row| data={} ; fields.zip(row).each { |f,r| data[f] = r } ; data }
