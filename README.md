@@ -3,6 +3,8 @@ Google Docs form to Science Hack Day Wiki converter
 
 This ruby script takes the data from a Google Docs form and publishes it to a Science Hack Day wiki page, formatted neatly.
 
+This is the original form that you can copy for your event: https://docs.google.com/spreadsheet/ccc?key=0AqCCIkeViZNwdEw1dUhqdkg5a0s0WEpfeVpmWWdTeVE&usp=sharing
+
 To customise it for your Science Hack Day, you'll need to change some configuration at the top of the file:
 
     GOOGLE_USER="someone@gmail.com" # your Google Docs username
